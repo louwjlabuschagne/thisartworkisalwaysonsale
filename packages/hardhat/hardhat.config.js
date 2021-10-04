@@ -11,7 +11,8 @@ module.exports = {
   defaultNetwork: 'localhost',
   networks: {
     localhost: {
-      url: 'http://localhost:8545',
+      url: 'http://0.0.0.0:8545',
+      chainId: 1337
     },
     hardhat: {
       accounts: defaultAccounts(),
@@ -20,6 +21,7 @@ module.exports = {
         auto: false,
         interval: 5000,
       },
+      chainId: 1337
     },
     mainnet: {
       url: `https://mainnet.infura.io/v3/${infuraID}`,

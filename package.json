@@ -14,7 +14,7 @@
     "react-app:start": "yarn workspace @taiaos/react-app start",
     "react-app:test": "yarn workspace @taiaos/react-app test",
     "build": "yarn workspace @taiaos/react-app build --max-old-space-size=12288",
-    "node": "cd packages/hardhat && npx hardhat node",
+    "node": "cd packages/hardhat && npx hardhat node --hostname 0.0.0.0",
     "deploy_contracts_local": "cd packages/hardhat && npx hardhat run --network localhost scripts/deploy_restorer.js",
     "deploy_v2_local": "cd packages/hardhat && npx hardhat run --network localhost scripts/deploy.js",
     "deploy_contracts_mainnet": "cd packages/hardhat && npx hardhat run --network mainnet scripts/deploy_restorer.js",
